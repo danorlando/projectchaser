@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.danorlando.projectchaser" >
+
+    <uses-sdk android:minSdkVersion="17" android:targetSdkVersion="19"/>
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme">
+        <!--   <activity
+              android:name=".AndroidOrientationSensor"
+              android:label="@string/app_name" >
+              <intent-filter>
+                  <action android:name="android.intent.action.MAIN" />
+
+                  <category android:name="android.intent.category.LAUNCHER" />
+              </intent-filter>
+          </activity>-->
+         <activity
+              android:name=".MainActivity"
+              android:label="@string/app_name"
+              android:configChanges="orientation|screenSize"
+             android:screenOrientation="sensor">
+              <intent-filter>
+                  <action android:name="android.intent.action.MAIN" />
+
+                  <category android:name="android.intent.category.LAUNCHER" />
+              </intent-filter>
+          </activity>
+        <activity android:configChanges="orientation|screenSize"
+            android:screenOrientation="sensor"
+            android:name=".ProjectActivity"
+            android:label="@string/app_name" >
+            <meta-data android:name="android.support.PARENT_ACTIVITY"
+                android:value=".ProjectListActivity"/>
+        </activity>
+        <activity android:name=".ProjectPagerActivity"
+            android:label="@string/app_name">
+            <meta-data android:name="android.support.PARENT_ACTIVITY"
+                android:value=".ProjectListActivity"/>
+        </activity>
+
+        <activity android:name=".ProjectCameraActivity"
+            android:screenOrientation="landscape"
+            android:label="@string/app_name">
+        </activity>
+
+    </application>
+
+</manifest>

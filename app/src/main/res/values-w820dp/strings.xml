@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="delete_crime">Delete</string>
+    <string name="new_crime">New</string>
+    <string name="show_subtitle">Subtitle</string>
+    <string name="project_title_label">Title</string>
+    <string name="project_title_hint">Enter a title for this project.</string>
+    <string name="project_details_label">Details</string>
+    <string name="project_solved_label">Completed?</string>
+    <string name="project_suspect_text">Choose Project</string>
+    <string name="project_report_text">Send Project Report</string>
+    <string name="take">Take</string>
+    <string name="subtitle">Professional Project Management</string>
+    <string name="projects_title">Projects</string>
+    <string name="project_manager_text">Choose Project Manager</string>
+    <string name="date_picker_title">Pick Project Start Date:</string>
+    <string name="hello">hello</string>
+</resources>
